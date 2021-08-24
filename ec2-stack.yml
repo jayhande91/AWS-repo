@@ -3,7 +3,7 @@ Parameters:
   KeyName:
     Description: Key Pair name
     Type: 'AWS::EC2::KeyPair::KeyName'
-    Default: north-virginia
+    #Default: north-virginia
   VPC:
     Type: 'AWS::EC2::VPC::Id'
     Default: vpc-0a4e2777
