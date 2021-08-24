@@ -3,13 +3,13 @@ Parameters:
   KeyName:
     Description: Key Pair name
     Type: 'AWS::EC2::KeyPair::KeyName'
-    Default: secure-key
+    Default: north-virginia
   VPC:
     Type: 'AWS::EC2::VPC::Id'
-    Default: vpc-0ef9d066
+    Default: vpc-0a4e2777
   Subnet:
     Type: 'AWS::EC2::Subnet::Id'
-    Default: subnet-eec047a2
+    Default: subnet-06c89659
   InstanceType:
     Description: Select one of the possible instance types
     Type: String
@@ -20,7 +20,7 @@ Parameters:
       - t2.medium
   SecurityGroup:
     Type: 'AWS::EC2::SecurityGroup::Id'
-    Default: sg-092b51f641c9f8509
+    Default: sg-08db17bdc52fb1a98
     AllowedValues:
       - sg-043316ca5a2bad564
       - sg-03397aa4af2ab5ad9
@@ -29,7 +29,7 @@ Resources:
   Server:
     Type: 'AWS::EC2::Instance'
     Properties:
-      ImageId: ami-02913db388613c3e1
+      ImageId: ami-0c2b8ca1dad447f8a
       InstanceType:
         Ref: InstanceType
       KeyName:
